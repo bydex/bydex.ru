@@ -1,0 +1,50 @@
+$sprite: '../img/sprites/sprite.svg#';
+
+// For project
+
+$green:       #46eeaa;
+$aqua:        #15eded;
+$blue:        #2cbfc7;
+$dark-green:  #11685f;
+$dark-blue:   #18526b;
+$gold:             #ad7b1b;
+$main-gradient:    linear-gradient(-126deg, $green 0%, $blue 100%);
+$green-to-blue:    linear-gradient(to right, $dark-green 0%, $gold 49%, $dark-blue 100%);
+$section-gradient: linear-gradient(to top, $aqua 0%, $aqua 41%, #029cf5 100%);
+$white:      #ffffff;
+$dark:       #101010;
+$gray: #cecece;
+
+$font-muller:       'Muller';
+$font-family-base:  $font-muller, sans-serif;
+$body-bg:           $dark;
+$primary-color:     $dark;
+
+$h1: 48;
+$h2: 40;
+
+$h1-height: 112%;
+$h2-height: 117%;
+$h3-height: 120%;
+$h4-height: 125%;
+
+$text-largest:  800;
+$text-bigger:   300;
+$text-big:      24;
+$text-large:    18;
+$text-normal:   16;
+$text-small:    14;
+$text-smallest: 12;
+
+$height-largest:  200%;
+$height-bigger:   150%;
+$height-small:    133%;
+$height-smallest: 120%;
+
+$border-radius-small:   2px;
+$border-radius-biggest: 50px;
+
+$duration: .3s;
+
+$containerMax: 1140;
+$containerMin: 320;
