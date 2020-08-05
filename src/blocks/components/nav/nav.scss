@@ -1,5 +1,30 @@
 .nav {
+    @media (max-width: $break_md) {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        z-index: 10;
+        @include padding(bottom, level_15);
+        @include padding(top, level_15);
+        padding: {
+            left: 15px;
+            right: 15px;
+        }
+        background: $section-gradient;
+        transform: translate(-100%, 0);
+        transition: {
+            property: transform;
+            duration: $duration;
+            timing-function: ease-in;
+        }
+    }
     &__links {
+        @media (max-width: $break_md) {
+            display: flex;
+            flex-direction: column;
+        }
         @include row-flex();
     }
     &__item {
@@ -16,6 +41,16 @@
         font-size: rem($text-large);
         text-decoration: none;
     }
+    &_active {
+        @media (max-width: $break_md) {
+            transform: translate(0, 0);
+            transition: {
+                property: transform;
+                duration: $duration;
+                timing-function: ease-out;
+            }
+        }
+    }
 }
 .nav__link:after {
     content: '';
@@ -25,7 +60,7 @@
     width: 32px;
     height: 1px;
     transform: translateX(-100%);
-    background-color: $dark;
+    background-color: $green;
     transition: {
         property: transform;
         duration: $duration;

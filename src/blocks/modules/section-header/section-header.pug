@@ -1,5 +1,13 @@
+include ../../components/scroll-direction/scroll-direction
+
 mixin section-header()
-    section.section.section-header
+    section.section.section_overlay.section-header
         .section__content.container
             .row
-                | 1234243
+                .section-header__wrapper
+                    h2.h1-heading.section-header__heading <span class="text gradient_aqua-green">Создаём сайты для рекламы и продвижения от 10 000 р!</span>
+                    p.text.text_big.section-header__paragraph <span class="text gradient_aqua-green">Мы создаем продающие сайты, а Вы, в свою очередь, получаете рабочий инструмент, приносящий поток новых клиентов в Ваш бизнес.</span>
+                    button.btn Заказать!
+        //- +scroll-direction({
+        //-     parentClass: 'section-header__scroll-direction'
+        //- })

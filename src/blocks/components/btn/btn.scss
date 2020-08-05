@@ -6,11 +6,22 @@
     border: none;
     padding: 0;
     transition: $duration;
-    font-family: inherit;
+    font: {
+        family: inherit;
+        size: rem($text-big);
+    }
+    padding: {
+        top: 20px;
+        right: 75px;
+        bottom: 17px;
+        left: 80px;
+    };
     background: none;
     outline: none;
     box-shadow: none;
     cursor: pointer;
+    background: $section-gradient;
+    border-radius: 29px;
 
     &:after {
         position: absolute;

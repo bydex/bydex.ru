@@ -4,5 +4,5 @@ mixin icon({className, svgName, viewBoxName = false})
 
 mixin picture({path = '', name, imgType, sourceType = 'webp', imgClass = false})
     picture
-        source(srcset= `./img/${path}${name}.${sourceType}` type=`image/${sourceType}`)
-        img(class=imgClass src= `./img/${path}${name}.${imgType}` alt=name)
+        source(srcset= `./img/${path}/${name}.${sourceType}` type=`image/${sourceType}`)
+        img(class=imgClass src= `./img/${path}/${name}.${imgType}` alt=name)

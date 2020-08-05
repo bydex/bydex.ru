@@ -1,0 +1,15 @@
+mixin scroll-direction({parentClass = false,})
+    .scroll-direction(class=parentClass)
+        .scroll-direction__wrp
+            +picture({
+                path: 'scroll-direction',
+                name: 'direction-header',
+                imgType: 'png',
+                sourceType: 'webp',
+                imgClass: 'scroll-direction__header'
+            })
+            .scroll-direction__icon-wrp
+                +icon({
+                    className: 'svg-icon scroll-direction__mouse',
+                    svgName: 'mouse',
+                })

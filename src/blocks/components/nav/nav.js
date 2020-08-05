@@ -1,13 +1,10 @@
-modules.define('nav', ['i-bem-dom'], function(provide, bemDom) {
+const hamburger = document.querySelector('.hamburger'),
+    navigation = document.querySelector('.nav');
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
+console.log(hamburger)
 
-});
+hamburger.addEventListener('click', e => {
+    e.preventDefault();
+    hamburger.classList.toggle('hamburger_active');
+    navigation.classList.toggle('nav_active')
+})
