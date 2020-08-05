@@ -1,0 +1,18 @@
+mixin portfolio({className = false, works = false})
+    .portfolio(class=className)
+        ul.portfolio__slider
+            if works
+                each val, index in works
+                    li.portfolio__item
+                        a.portfolio__link(href=val.href style=`background-image: url(./img/portfolio/${val.imgName})`)
+        .portfolio__arrows
+            li.portfolio__arrow.portfolio__arrow_prev.prev(aria-controls="customize" tabindex="-1" data-controls="prev")
+                +icon({
+                    className: 'svg-icon',
+                    svgName: 'arrow'
+                })
+            li.portfolio__arrow.portfolio__arrow_next.next(aria-controls="customize" tabindex="-1" data-controls="next")
+                +icon({
+                    className: 'svg-icon',
+                    svgName: 'arrow'
+                })

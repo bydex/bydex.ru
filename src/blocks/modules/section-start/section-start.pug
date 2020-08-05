@@ -1,0 +1,34 @@
+include ../../components/portfolio/portfolio
+
+mixin section-start()
+    section.section.section_overlay.section-start
+        .section__content.container
+            .row.section-start__wrapper
+                .section-start__content
+                    h2.h1-heading.section__title <span class="text gradient_aqua-green">Быстрый старт</span>
+                    p.text.text_big.section__paragraph <span class="text gradient_aqua-green">С нами запустить свой проект просто! Просмотри наши кейсы:</span>
+                    .section-service__btn-wrp
+                        button.btn Заказать!
+        .section-start__portfolio
+            .container
+                +portfolio({
+                    className: 'section-start__slider',
+                    works: [
+                        { href: '#',
+                          imgName: 'portfolio-1.jpg' },
+                        { href: '#',
+                          imgName: 'portfolio-2.jpg' },
+                        { href: '#',
+                          imgName: 'portfolio-3.jpg' },
+                        { href: '#',
+                          imgName: 'portfolio-4.jpg' },
+                        { href: '#',
+                          imgName: 'portfolio-1.jpg' },
+                        { href: '#',
+                          imgName: 'portfolio-2.jpg' },
+                        { href: '#',
+                          imgName: 'portfolio-3.jpg' },
+                        { href: '#',
+                          imgName: 'portfolio-4.jpg' },
+                    ]
+                })

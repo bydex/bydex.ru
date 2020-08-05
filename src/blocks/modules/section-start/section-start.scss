@@ -1,0 +1,19 @@
+.section-start {
+    position: relative;
+    &__wrapper {
+        justify-content: center;
+    }
+    &__content {
+        @include col();
+        max-width: 500px;
+        text-align: center;
+    }
+    &__portfolio {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: rgba(15, 15, 15, .65);
+    }
+}
