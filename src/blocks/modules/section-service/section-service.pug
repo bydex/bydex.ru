@@ -1,0 +1,12 @@
+mixin section-service({parentClass = false, titleText, paragraphText, btnText = 'Заказать', secondBtn = 'Портфолио'})
+    section.section.section_overlay.section__service(class=parentClass)
+        .section__content.container
+            .row
+                .section__wrapper
+                    h2.h1-heading.section__title <span class="text gradient_aqua-green">#{titleText}</span>
+                    p.text.text_big.section__paragraph <span class="text gradient_aqua-green">#{paragraphText}</span>
+                    h2.h1-heading.section__title.section__cost <span class="text gradient_aqua-green">10 000 р.</span>
+                    .section-service__btn-wrp
+                        button.btn #{btnText}
+                    .section-service__btn-wrp
+                        button.btn.btn_theme_transparent #{secondBtn}

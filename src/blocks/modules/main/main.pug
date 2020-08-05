@@ -1,5 +1,15 @@
 include ../section-header/section-header
+include ../section-service/section-service
 
 mixin main()
+    -
+        const
+            titleTextCard = 'Сайт-визитка'
+            paragraphTextCard = 'Сайт с необходимым набором функций и адаптивной вёрсткой для быстрого старта, чтобы заявить о себе в интернете. Подходит как временное решение или тестирование своей ниши в интернете.'
     main.main
         +section-header()
+        +section-service({
+            parentClass: 'section-card',
+            titleText: titleTextCard,
+            paragraphText: paragraphTextCard,
+        })

@@ -1,31 +1,6 @@
 .section-header {
     background: {
         image: url(../img/section-bg/section-header.jpg);
-        position: top center;
-        size: cover;
-        repeat: no-repeat;
-    }
-    &__wrapper {
-        @include col();
-        @include size(7);
-        @include size-xxl(8);
-        @include size-md(9);
-        @include size-sm(10);
-        @include size-xs(12);
-    }
-    &__heading {
-        // @media (max-width: $break_xxl) {
-        //     font: {
-        //         size: 
-        //     }
-        // }
-        @include margin(bottom, level_15);
-        font-weight: 800;
-        line-height: $h4-height;
-    }
-    &__paragraph {
-        @include margin(bottom, level_20);
-        line-height: $h4-height;
     }
     &__scroll-direction {
         position: absolute;

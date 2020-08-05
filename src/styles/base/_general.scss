@@ -100,6 +100,12 @@ body {
     justify-content: center;
     align-items: center;
 
+    background: {
+        position: top center;
+        size: cover;
+        repeat: no-repeat;
+    }
+
     &__content {
         width: 100%;
     }
@@ -111,5 +117,27 @@ body {
     }
     &_overlay {
        box-shadow: inset 0 0 0 100vw rgba(0,0,0, .65);
+    }
+    &__wrapper {
+        @include col();
+        @include size(7);
+        @include size-xxl(8);
+        @include size-md(9);
+        @include size-sm(10);
+        @include size-xs(12);
+    }
+    &__title {
+        @include margin(bottom, level_15);
+        font-weight: 800;
+        line-height: $h4-height;
+    }
+    &__paragraph {
+        @include margin(bottom, level_20);
+        line-height: $h4-height;
+    }
+    &-card {
+        background: {
+            image: url(../img/section-bg/section-card.jpg);
+        }
     }
 }
