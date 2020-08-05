@@ -140,4 +140,21 @@ body {
             image: url(../img/section-bg/section-card.jpg);
         }
     }
+    &-corporate {
+        background: {
+            image: url(../img/section-bg/section-corporate.jpg);
+        }
+        box-shadow: inset 0 0 0 100vw rgba(0,0,0, .9);
+    }
+    &-shop {
+        background: {
+            image: url(../img/section-bg/section-shop.jpg);
+        }
+    }
+    &-landing {
+        background: {
+            image: url(../img/section-bg/section-landing.jpg);
+        }
+        box-shadow: inset 0 0 0 100vw rgba(0,0,0, .85);
+    }
 }

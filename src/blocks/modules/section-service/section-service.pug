@@ -1,5 +1,5 @@
-mixin section-service({parentClass = false, titleText, paragraphText, btnText = 'Заказать', secondBtn = 'Портфолио'})
-    section.section.section_overlay.section__service(class=parentClass)
+mixin section-service({parentClass = false, titleText, paragraphText, overlay = 'section_overlay', btnText = 'Заказать', secondBtn = 'Портфолио'})
+    section.section.section__service(class=parentClass, class=overlay)
         .section__content.container
             .row
                 .section__wrapper
